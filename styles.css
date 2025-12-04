@@ -5,14 +5,15 @@
 }
 
 :root {
-    --primary-color: #7C9CBF;
-    --secondary-color: #B4D4E1;
-    --accent-color: #F4A261;
-    --text-dark: #2D3748;
-    --text-light: #718096;
-    --bg-light: #F7FAFC;
+    --primary-color: #F4B942;
+    --secondary-color: #7FBDD3;
+    --accent-color: #F0A6CA;
+    --mint-green: #90D5A6;
+    --text-dark: #000000;
+    --text-light: #4A4A4A;
+    --bg-light: #F5F5F5;
     --bg-white: #FFFFFF;
-    --border-light: #E2E8F0;
+    --border-light: #E0E0E0;
 }
 
 body {
@@ -77,19 +78,37 @@ body {
 }
 
 .btn-contact:hover {
-    background-color: #6B8AAF;
+    background-color: #E0A830;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #EDF2F7 0%, #E6F3F9 100%);
+    background: linear-gradient(135deg, #FFF9E6 0%, #E6F7FA 100%);
     padding: 8rem 0;
-    text-align: center;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-logo {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
 }
 
 .hero-title {
@@ -132,9 +151,9 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #6B8AAF;
+    background-color: #E0A830;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(124, 156, 191, 0.3);
+    box-shadow: 0 10px 25px rgba(244, 185, 66, 0.3);
 }
 
 .btn-secondary {
@@ -232,7 +251,7 @@ body {
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #D4E9F2 100%);
+    background: linear-gradient(135deg, var(--mint-green) 0%, var(--secondary-color) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -266,7 +285,7 @@ body {
 }
 
 .btn-product:hover {
-    background-color: #6B8AAF;
+    background-color: #E0A830;
 }
 
 /* About Section */
@@ -380,6 +399,20 @@ body {
 
     .hero {
         padding: 4rem 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero-logo {
+        flex: 0 0 auto;
+        max-width: 80%;
+    }
+
+    .hero-text {
+        text-align: center;
     }
 
     .nav-menu {
